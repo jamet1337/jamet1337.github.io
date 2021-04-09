@@ -42,7 +42,7 @@
 }
 
 [data-termynal]:after {
-    content: '1337@r00t | Jamet1337';
+    content: 'r00t@1337 | Jamet1337';
     position: absolute;
     color: var(--color-text-subtle);
     top: 5px;
