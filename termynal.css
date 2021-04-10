@@ -70,7 +70,7 @@
 }
 
 [data-ty="input"]:before {
-    content: '$';
+    content: 'root@1337~$';
 }
 
 [data-ty][data-ty-prompt]:before {
