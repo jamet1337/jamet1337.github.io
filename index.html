@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Nmap | r00t@1337</title>
+        <meta charset="utf-8">
+        <!-- include the termynal stylesheet -->
+        <link rel="stylesheet" href="https://jamet1337.github.io/termynal.css">
+        <!-- some custom styles for the page -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+        <style>
+            body {
+                padding: 0; margin: 0;
+                background: #1a1e24;
+                width: 100%;
+                min-height: 100vh;
+                display: -webkit-box; display: -ms-flexbox; display: flex;
+                -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+                -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+                -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+            }
+            input {
+			opacity: 0;
+			animation: muncul 60s;
+			animation-delay: 6s;
+			background: transparent;
+			color: white;
+			outline: none;
+			border: none;
+			height: 10px;
+			width: 500px;
+			font-size: 5px;
+		}
+        </style>
+    </head>
+    <body>
+        <!-- the termynal container -->
+        <div id="termynal" data-termynal>
+            <span data-ty="input">Your Target : target.com</span><form method="post" action=""><input type="text" name="target" id="ntr" placeholder="_"></form>
+            <span data-ty="progress"></span>
+            <span data-ty>target.com Sukses di Scann</span>
+            <span data-ty></span>
+            <span data-ty="input">Hasil :</span>
+             <span style="color : red;" data-ty>Starting Nmap 7.70 ( https://nmap.org ) at 2021-04-09 15:15 UTC Nmap scan report for target.com (151.101.66.187) Host is up (0.0013s latency). Other addresses for target.com (scanned): 151.101.194.187 151.101.130.187 151.101.2.187  PORT     STATE    SERVICE 21/tcp   filtered ftp 22/tcp   filtered ssh 23/tcp   filtered telnet 80/tcp   open     http 110/tcp  filtered pop3 143/tcp  filtered imap 443/tcp  open     https 3389/tcp filtered ms-wbt-server  Nmap done: 1 IP address (1 host up) scanned in 1.28 seconds</span>
+            <span data-ty></span>
+            <span style="color : #5352ED;" data-ty="input">    By Jamet1337</span>
+            <
+        </div>
+
+        <!-- include and initialise termynal.js -->
+        <script src="https://jamet1337.github.io/termynal.js" data-termynal-container="#termynal"></script>
+    </body>
+</html>
