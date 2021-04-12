@@ -29,6 +29,7 @@
 [data-termynal]:before {
     content: '';
     position: absolute;
+    font-size: 18px;
     top: 15px;
     left: 15px;
     display: inline-block;
@@ -80,6 +81,7 @@
 [data-ty-cursor]:after {
     content: attr(data-ty-cursor);
     font-family: monospace;
+    font-size: 18px;
     margin-left: 0.5em;
     -webkit-animation: blink 1s infinite;
             animation: blink 1s infinite;
