@@ -12,6 +12,7 @@
                 padding: 0; margin: 0;
                 background: #1a1e24;
                 width: 100%;
+                font-size: 18px;
                 min-height: 100vh;
                 display: -webkit-box; display: -ms-flexbox; display: flex;
                 -webkit-box-align: center; -ms-flex-align: center; align-items: center;
@@ -20,8 +21,8 @@
             }
             input {
 			opacity: 0;
-			/* animation: muncul 60s;
-			animation-delay: 6s; */
+			animation: muncul 60s;
+			animation-delay: 6s;
 			background: transparent;
 			color: white;
 			outline: none;
@@ -30,12 +31,21 @@
 			width: 500px;
 			font-size: 5px;
 		}
+		textarea {
+background-color: transparent;
+color: #5352ED;
+border-color: white;
+outline-color: red;
+}
+
         </style>
     </head>
     <body>
         <!-- the termynal container -->
-        <div id="termynal" data-termynal>
-            <span data-ty="input">Your Target : target.com</span><form method="post" action=""><input type="text" name="target" id="ntr" placeholder="_"></form>
+         <form method="post" action="">
+          <div id="termynal" data-termynal>
+           <span data-ty="input">Your Target : target.com</span>
+           <span data-ty><textarea name="target" id="ntr" cols="30" rows="1">Masukkan Link Disini</textarea><button>Klik Tombol</button></span>
             <span data-ty="progress"></span>
             <span data-ty>target.com Sukses di Scann</span>
             <span data-ty></span>
